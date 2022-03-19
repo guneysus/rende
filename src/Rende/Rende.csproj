@@ -1,22 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <LangVersion>10.0</LangVersion>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFrameworks>net6.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>10.0</LangVersion>
 
-  </PropertyGroup>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>rende</ToolCommandName>
+        <PackageOutputPath>./nupkg</PackageOutputPath>
+        <Version>0.0.1-alpha</Version>
+    </PropertyGroup>
 
     <ItemGroup>
-    <PackageReference Include="CommandLineParser" Version="2.8.0" />
-    <PackageReference Include="DotLiquid" Version="2.2.595" />
-    <PackageReference Include="Fluid.Core" Version="2.2.14" />
-    <PackageReference Include="Handlebars.Net" Version="2.1.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Scriban" Version="5.4.1" />
-    <PackageReference Include="Throw" Version="1.2.0" />
-  </ItemGroup>
+        <Compile Remove="samples\**" />
+        <EmbeddedResource Remove="samples\**" />
+        <None Remove="samples\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CommandLineParser" Version="2.8.0" />
+        <PackageReference Include="DotLiquid" Version="2.2.595" />
+        <PackageReference Include="Fluid.Core" Version="2.2.14" />
+        <PackageReference Include="Handlebars.Net" Version="2.1.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <PackageReference Include="Scriban" Version="5.4.1" />
+        <PackageReference Include="Throw" Version="1.2.0" />
+    </ItemGroup>
 
 </Project>

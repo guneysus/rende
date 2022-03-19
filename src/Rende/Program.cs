@@ -21,6 +21,9 @@ public static class Rende
     public static void Render(Options options)
     {
         string source = options.Template.OpenText().ReadToEnd() ?? string.Empty;
+
+        Console.WriteLine(options.Data.FullName);
+
         string json = options.Data.OpenText().ReadToEnd();
         var model = JsonConvert.DeserializeObject<Dictionary<string, object>>(json) ?? new object();
         string result = string.Empty;
