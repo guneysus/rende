@@ -10,7 +10,7 @@
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>rende</ToolCommandName>
         <PackageOutputPath>./nupkg</PackageOutputPath>
-        <Version>0.0.1-alpha</Version>
+        <Version>0.0.6-alpha</Version>
     </PropertyGroup>
 
     <ItemGroup>
