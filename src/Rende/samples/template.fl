@@ -1,0 +1,9 @@
+﻿<ul id="products">
+  {% for product in products %}
+    <li>
+      <h2>{{product.name}}</h2>
+        <span>{{product.price | price }}</span>
+        <p>{{product.description | prettyprint | paragraph }}</p>
+    </li>
+  {% endfor %}
+</ul>

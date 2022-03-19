@@ -1,0 +1,20 @@
+{
+  "title": "Ahmed",
+  "body": "Lorem Ipsum!",
+  "products": [
+    {
+      "name": "Orange",
+      "price": "₺9.90",
+      "description": null,
+      "id": 0
+    },
+    {
+      "name": "Apple",
+      "id": 1
+    },
+    {
+      "name": "Banana",
+      "id": 2
+    }
+  ]
+}
