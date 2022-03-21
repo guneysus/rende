@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cake.ArgumentHelpers</name>
+    </assembly>
+    <members>
+        <member name="T:Cake.ArgumentHelpers.ArgumentOrEnvironmentVariableAlias">
+            <summary>
+            Contains Aliases for helping work with combinations of Argument and Environment variables.
+            </summary>
+        </member>
+        <member name="M:Cake.ArgumentHelpers.ArgumentOrEnvironmentVariableAlias.ArgumentOrEnvironmentVariable(Cake.Core.ICakeContext,System.String,System.String,System.Boolean)">
+            <summary>
+            Get a bool variable from various script inputs: first via Argument, then falling back on EnvironmentVariable, finally falling back on a default.
+            </summary>
+            <param name="name">The argument name to attempt to find in the command line parameters, prefixing with <paramref name="environmentNamePrefix"/> to attempt to find in environment variables.</param>
+            <param name="environmentNamePrefix">An optional prefix used to qualify the same variable name when present in EnvironmentVariable form (e.g., "MySetting" command-line argument vs. "MyTool_MySetting" environment variable).</param>
+            <returns>Value found or default, first checked in command-line argument, then environment variable.</returns>
+        </member>
+        <member name="M:Cake.ArgumentHelpers.ArgumentOrEnvironmentVariableAlias.ArgumentOrEnvironmentVariable(Cake.Core.ICakeContext,System.String,System.Boolean)">
+            <summary>
+            Get a bool variable from various script inputs: first via Argument, then falling back on EnvironmentVariable, finally falling back on a default.
+            </summary>
+            <param name="name">The argument name to attempt to find in either the command line parameters or environment variables.</param>
+            <returns>Value found or default, first checked in command-line argument, then environment variable.</returns>
+        </member>
+        <member name="M:Cake.ArgumentHelpers.ArgumentOrEnvironmentVariableAlias.ArgumentOrEnvironmentVariable(Cake.Core.ICakeContext,System.String,System.String,System.String)">
+            <summary>
+            Get a string variable from various script inputs: first via Argument, then falling back on EnvironmentVariable, finally falling back on a default.
+            </summary>
+            <param name="name">The argument name to attempt to find in the command line parameters, prefixing with <paramref name="environmentNamePrefix"/> to attempt to find in environment variables.</param>
+            <param name="environmentNamePrefix">An optional prefix used to qualify the same variable name when present in EnvironmentVariable form (e.g., "MySetting" command-line argument vs. "MyTool_MySetting" environment variable).</param>
+            <returns>Value found or default, first checked in command-line argument, then environment variable.</returns>
+        </member>
+        <member name="M:Cake.ArgumentHelpers.ArgumentOrEnvironmentVariableAlias.ArgumentOrEnvironmentVariable(Cake.Core.ICakeContext,System.String,System.String)">
+            <summary>
+            Get a string variable from various script inputs: first via Argument, then falling back on EnvironmentVariable, finally falling back on a default.
+            </summary>
+            <param name="name">The argument name to attempt to find in the command line parameters, prefixing with <paramref name="environmentNamePrefix"/> to attempt to find in environment variables.</param>
+            <param name="environmentNamePrefix">An optional prefix used to qualify the same variable name when present in EnvironmentVariable form (e.g., "MySetting" command-line argument vs. "MyTool_MySetting" environment variable).</param>
+            <returns>Value found or default, first checked in command-line argument, then environment variable.</returns>
+        </member>
+    </members>
+</doc>

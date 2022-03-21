@@ -8,15 +8,41 @@
         <LangVersion>10.0</LangVersion>
 
         <PackAsTool>true</PackAsTool>
-        <ToolCommandName>rende</ToolCommandName>
+        <ToolCommandName>dotnet-rende</ToolCommandName>
         <PackageOutputPath>./nupkg</PackageOutputPath>
-        <Version>0.0.6-alpha</Version>
+        <Version>0.0.7-alpha</Version>
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Remove="samples\**" />
-        <EmbeddedResource Remove="samples\**" />
-        <None Remove="samples\**" />
+        <Compile Remove="nupkg\**" />
+        <EmbeddedResource Remove="nupkg\**" />
+        <None Remove="nupkg\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="samples\fluid.json" />
+      <None Remove="samples\scriban.json" />
+      <None Remove="samples\template.fl" />
+      <None Remove="samples\template.hb" />
+      <None Remove="samples\template.sc" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="samples\fluid.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="samples\scriban.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="samples\template.fl">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="samples\template.hb">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="samples\template.sc">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
     <ItemGroup>
@@ -27,6 +53,12 @@
         <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
         <PackageReference Include="Scriban" Version="5.4.1" />
         <PackageReference Include="Throw" Version="1.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="samples\handlebars.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>

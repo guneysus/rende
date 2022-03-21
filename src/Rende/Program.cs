@@ -20,7 +20,7 @@ public static class Rende
 {
     public static void Render(Options options)
     {
-        string source = options.Template.OpenText().ReadToEnd() ?? string.Empty;
+        string source = options.Source.OpenText().ReadToEnd() ?? string.Empty;
         string json = options.Model.OpenText().ReadToEnd();
         var model = JsonConvert.DeserializeObject<Dictionary<string, object>>(json) ?? new object();
         string result = string.Empty;

@@ -1,5 +1,18 @@
 {
   "version": 1,
   "isRoot": true,
-  "tools": {}
+  "tools": {
+    "rende": {
+      "version": "0.0.7-alpha",
+      "commands": [
+        "dotnet-rende"
+      ]
+    },
+    "cake.tool": {
+      "version": "2.1.0",
+      "commands": [
+        "dotnet-cake"
+      ]
+    }
+  }
 }

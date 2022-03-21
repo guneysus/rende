@@ -2,7 +2,7 @@
   "profiles": {
     "Rende": {
       "commandName": "Project",
-      "commandLineArgs": "-s -e scriban -t samples\\template.sc -m samples\\scriban.json"
+      "commandLineArgs": ""
     }
   }
 }

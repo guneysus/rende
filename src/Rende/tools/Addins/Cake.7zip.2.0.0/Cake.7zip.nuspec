@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Cake.7zip</id>
+    <version>2.0.0</version>
+    <authors>Nils Andresen</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://cake-contrib.github.io/Cake.7zip</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/addin/cake-contrib-addin-medium.png</iconUrl>
+    <description>Makes 7zip available as a tool in Cake</description>
+    <releaseNotes>https://github.com/cake-contrib/Cake.7zip/releases</releaseNotes>
+    <copyright>Copyright © 2020-2021 — Nils Andresen</copyright>
+    <tags>cake build cake-build script addin cake-addin SevenZip 7zip</tags>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.7zip.git" commit="8b0787745ca683a6622e37abbbd33c3fb96c6a10" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+      <group targetFramework="net5.0" />
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+</package>
