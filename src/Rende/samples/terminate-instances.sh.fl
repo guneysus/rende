@@ -1,0 +1,5 @@
+#!/bin/bash
+
+{% for instance in instances %}
+aws ec2 --terminate-instance --instance-id {{ instance }}
+{%- endfor %}
