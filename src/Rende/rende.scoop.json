@@ -1,0 +1,8 @@
+{
+  "version": "0.0.7-alpha",
+  "url": "https://github.com/guneysus/rende/releases/download/v0.0.7-alpha/Rende.exe",
+  "autoupdate": {
+    "url": "https://github.com/guneysus/rende/releases/download/v$version/Rende.exe"
+  },
+  "bin": "Rende.exe"
+}

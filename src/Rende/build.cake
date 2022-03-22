@@ -4,10 +4,11 @@
 var target = Argument("target", "Default");
 var apikey = EnvironmentVariable("MYGET_API_KEY");
 var runtime = Argument<string>("runtime", default);
+var project = "./Rende.csproj";
 
 Task("Default")
   .Does(() => {
-    Information("Default task");
+    Information(ProjectVersion(project));
   });
 
 Task("Push")
@@ -27,7 +28,6 @@ Task("Push")
 Task("Publish")
   .Does<BuildData>(data => {
 
-		  var project = "./Rende.csproj";
       Information(ProjectVersion(project));
 
       DotNetPublish(project,  new DotNetPublishSettings {
