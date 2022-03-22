@@ -3,9 +3,10 @@ $default = 'test'
 function test {
   setup
   
-  dotnet rende -s -e fluid -t .\samples\template.fl -m .\samples\fluid.json
-  dotnet rende -s -e handlebars -t .\samples\template.hb -m .\samples\handlebars.json
-  dotnet rende -s -e scriban -t .\samples\template.sc -m .\samples\scriban.json
+  dotnet rende -e fluid -t .\samples\template.fl -m .\samples\fluid.json
+  dotnet rende -e handlebars -t .\samples\template.hb -m .\samples\handlebars.json
+  dotnet rende -e scriban -t .\samples\template.sc -m .\samples\scriban.json
+  dotnet rende -e fluid -s .\samples\terminate-instances.sh.fl -m .\samples\instances.json
   
   local_uninstall
 }
@@ -19,6 +20,7 @@ function develop {
   dotnet run -- -e fluid -s .\samples\template.fl -m .\samples\fluid.json
   dotnet run -- -e handlebars -s .\samples\template.hb -m .\samples\handlebars.json
   dotnet run -- -e scriban -s .\samples\template.sc -m .\samples\scriban.json
+  dotnet run -- -e fluid -s .\samples\terminate-instances.sh.fl -m .\samples\instances.json
 }
 
 function local_install {
