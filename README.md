@@ -8,12 +8,12 @@ Rende
 
 ### scoop
 ```shell
-scoop install https://raw.githubusercontent.com/guneysus/rende/develop/rende.json
+scoop install https://raw.githubusercontent.com/guneysus/rende/master/rende.scoop.json
 ```
 
 ### dotnet global tool
 ```shell
-dotnet tool install -g Rende --version 0.0.6-alpha --add-source https://www.myget.org/F/guneysu/api/v3/index.json
+dotnet tool install -g Rende --version 0.0.7-alpha --add-source https://www.myget.org/F/guneysu/api/v3/index.json
 ```
 
 
