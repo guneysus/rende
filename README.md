@@ -8,7 +8,7 @@ Rende
 
 ### scoop
 ```shell
-scoop install https://raw.githubusercontent.com/guneysus/rende/develop/rende.scoop.json
+scoop install https://raw.githubusercontent.com/guneysus/rende/develop/rende.json
 ```
 
 ### dotnet global tool
